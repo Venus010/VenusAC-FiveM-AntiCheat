@@ -1,11 +1,11 @@
 {
-  "version": "1.0",
+  "version": "1.01",
   "changelog": [
-    "[NEW] Modern in‑game Admin Panel (/venusac) with log viewing & freecam module",
-    "[IMPROVED] Expanded detection coverage & refined thresholds to reduce false positives",
-    "[IMPROVED] VPN defense layer with enhanced provider matching & fallback logic",
-    "[IMPROVED] Join phase protection: early identifier validation and safer initialization sequence",
-    "[SECURITY] Hardened spoof prevention & connection integrity checks",
-    "[MAINTENANCE] Streamlined configuration layout for faster setup"
+    "[+] Added pre-ban validation using `CheckBan()` to prevent duplicate bans",
+    "[+] Wrapped database insert operations in `pcall` for safer error handling",
+    "[*] Adjusted flag timing — detection flag now set after successful DB insert",
+    "[*] Improved error logging during ban operations",
+    "[+] Added unique constraint on key identifiers in database to prevent duplicate records",
+    "[*] Optimized detection flow for more consistent ban application"
   ]
 }
